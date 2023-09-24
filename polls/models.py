@@ -1,4 +1,5 @@
 from django.db import models
+'''creating the model classes'''
 
 
 class Questions(models.Model):
@@ -12,6 +13,7 @@ class Questions(models.Model):
     def __str__(self):
         return self.question_text
 
+
 class Choice(models.Model):
     '''
         this defines the question choices
@@ -23,3 +25,4 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+    
